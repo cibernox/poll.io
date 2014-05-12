@@ -1,0 +1,23 @@
+<p>{{i18n-t "title"}}</p>
+
+<table class="table rooms-table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Title</th>
+      <th>Body</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each}}
+      <tr>
+        <td>{{id}}</td>
+        <td>{{title}}</td>
+        <td>{{body}}</td>
+        <td>{{#link-to "rooms.show" this}}Entrar{{/link-to}}</td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+{{#link-to "rooms.new"}}New room{{/link-to}}

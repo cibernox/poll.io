@@ -1,0 +1,14 @@
+New room
+<div class="small-12 columns">
+  <label>Title
+    {{input value=title class="room-title" placeholder="Rooms title"}}
+  </label>
+</div>
+<div class="small-12 columns">
+  <label>Body
+    {{textarea value=body class="room-body" placeholder="Rooms body"}}
+  </label>
+</div>
+<div class="small-12 columns">
+  <button class="button submit" {{action "save" this}}>Create</button>
+</div>
