@@ -26,7 +26,14 @@ app.import('vendor/ic-ajax/dist/named-amd/main.js', {
 });
 
 app.import('vendor/ember-simple-i18n/dist/named-amd/main.js', {
-  'ember-simple-i18n': ['default', 'translate', 'localize', 'I18n']
+  'ember-simple-i18n': [
+    'default',
+    'translateHelper',
+    'localizeHelper',
+    'setDefaultLocale',
+    'setLocale',
+    'setFallbacks'
+  ]
 });
 
 module.exports = app.toTree();
